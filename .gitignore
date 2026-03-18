@@ -20,3 +20,8 @@ yarn-error.log*
 Thumbs.db
 TODO*
 user.json
+
+# Local-only knowledge base + generated outputs
+data/
+out/
+.rag/
