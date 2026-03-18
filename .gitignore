@@ -1,6 +1,7 @@
 # Compiled output
 node_modules/
 dist/
+lib/
 .tmp/
 
 # Logs

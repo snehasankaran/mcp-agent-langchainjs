@@ -1,0 +1,29 @@
+{
+  "name": "jira-mcp",
+  "version": "1.0.0",
+  "description": "Model Context Protocol (MCP) server for Jira Cloud",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "tsx src/server.ts",
+    "dev": "tsx watch src/server.ts",
+    "build": "tsc",
+    "clean": "rimraf lib"
+  },
+  "keywords": [],
+  "author": "Microsoft",
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.10.2",
+    "dotenv": "^17.0.1",
+    "express": "^5.0.1",
+    "zod": "^4.1.13"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.0",
+    "@types/node": "^22",
+    "rimraf": "^6",
+    "tsx": "^4",
+    "typescript": "^5.8.3"
+  }
+}

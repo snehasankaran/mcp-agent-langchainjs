@@ -8,8 +8,9 @@
     "start": "run-on-output -n 'ready' -p 'burger.*lock lease,agent.*lock lease' concurrently \"npm:start:*\" --kill-others",
     "start:burger": "npm run start --workspace=burger-webapp",
     "start:mcp": "npm run start --workspace=burger-mcp -- --local",
+    "start:jira-mcp": "npm run start --workspace=jira-mcp",
     "start:agent": "npm run start --workspace=agent-webapp",
-    "ready": "echo '\n🚀 All services ready 🚀\n\n- Agent webapp  : http://localhost:4280\n- Burger webapp : http://localhost:5173\n- Burger MCP    : http://localhost:3000/mcp\n'",
+    "ready": "echo '\n🚀 All services ready 🚀\n\n- Agent webapp  : http://localhost:4280\n- Burger webapp : http://localhost:5173\n- Burger MCP    : http://localhost:3000/mcp\n- Jira MCP      : http://localhost:3001/mcp\n'",
     "build": "npm run build --workspaces --if-present",
     "clean": "npm run clean --workspaces --if-present",
     "env": "node env.js",
@@ -61,7 +62,9 @@
       "ignores": [
         "**/*.genai.mjs",
         "**/vite.config.ts",
-        "**/slides/**/*.*"
+        "**/slides/**/*.*",
+        "**/lib/**/*",
+        "**/dist/**/*"
       ]
     },
     {
