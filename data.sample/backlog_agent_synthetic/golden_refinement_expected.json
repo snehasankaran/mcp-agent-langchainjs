@@ -1,0 +1,13 @@
+{
+  "storyKey": "DEMO-123",
+  "title": "As a user, I can reset my password",
+  "readinessScore": 85,
+  "acceptanceCriteria": [
+    "Given I forgot my password, when I request a reset link, then I receive an email with a time-limited link.",
+    "Given the reset link is valid, when I set a new password, then I can log in with the new password.",
+    "Given the reset link is expired, when I try to use it, then I see an error and can request a new link."
+  ],
+  "openQuestions": ["What is the reset link expiration time?"],
+  "labelsToAdd": ["refined", "needs-security-review"],
+  "commentsToPost": "Refinement summary: Added ACs, identified open questions, suggested labels."
+}
