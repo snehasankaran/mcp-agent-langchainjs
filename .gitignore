@@ -25,3 +25,8 @@ user.json
 data/
 out/
 .rag/
+
+# Local-only knowledge base + generated outputs
+data/
+out/
+.rag/
